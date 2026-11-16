@@ -1,0 +1,8 @@
+# Strategic-merge patch: swap maxUnavailable for a hard floor.
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: checkout-api
+spec:
+  maxUnavailable: null   # delete the base field
+  minAvailable: "100%"

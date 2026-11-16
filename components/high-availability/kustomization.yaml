@@ -1,0 +1,5 @@
+# Reusable "HA" component. Only prod includes it today, but other overlays could.
+apiVersion: kustomize.config.k8s.io/v1alpha1
+kind: Component
+patches:
+  - path: pdb-patch.yaml

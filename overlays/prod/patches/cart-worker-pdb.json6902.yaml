@@ -1,0 +1,4 @@
+# JSON6902 patch, not strategic merge.
+- op: replace
+  path: /spec/minAvailable
+  value: 4
